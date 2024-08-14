@@ -17,8 +17,7 @@ public class Rentals extends ArrayList<Rental> {
     public int calculateFrequentRenterPoints() {
         int frequentRenterPoints = 0;
         for (Rental rental : this) {
-            frequentRenterPoints++;
-            if (rental.isRenterPoints()) frequentRenterPoints++;
+            frequentRenterPoints += rental.getFrequentRenterPoints(); // Use the method to correctly accumulate points
         }
         return frequentRenterPoints;
     }

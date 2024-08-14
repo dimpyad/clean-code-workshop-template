@@ -36,7 +36,7 @@ public class HtmlStatement {
 
     private String footer() {
         String result = "";
-        result += "<H2>Amount owed is <b>" + rentals.calculateTotalAmount() + "</b>";
+        result += "<H2>Amount owed is <b>" + rentals.calculateTotalAmount() + "</b></H2>";
         result += "<H2>You earned <b>" + rentals.calculateFrequentRenterPoints() + "</b> frequent renter points</H2>";
         return result;
     }
